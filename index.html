@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Arman Search</title>
+ <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+<body>
+			
+		
+	<form id="f-srch"  method="get" />	
+	<div class="container">
+	<center><img src="arman_logo.png" alt="armankhan.in"/><center>
+	  <div class="search-box">
+		<input type="text" id="txtsrch" placeholder="Enter something....">
+		<button type="submit" >Search</button>
+	 </div>
+	 
+</div>
+		<script type="text/javascript">
+		document.getElementById('f-srch').onsubmit = function() {
+			window.location = 'http://www.google.com/search?q='  + document.getElementById('txtsrch').value;
+			return false;
+		}
+	</script>
+	
+</body>
+</html>
